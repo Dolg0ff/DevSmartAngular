@@ -1,9 +1,11 @@
 <!-- BEGIN: Brand -->
 <div class="kt-aside__brand kt-grid__item">
-    <div class="kt-aside__brand-logo">
+    <div class="kt-aside__brand-logo" style="display:inline">
         <a routerLink="/" target="_blank">
-            <img *ngIf="!appSession.tenant || !appSession.tenant.logoId" [src]="defaultLogo" alt="logo" height="38" />
-            <img *ngIf="appSession.tenant && appSession.tenant.logoId" [src]="remoteServiceBaseUrl + '/TenantCustomization/GetTenantLogo?skin=' + currentTheme.baseSettings.menu.asideSkin + '&tenantId=' + appSession.tenant.id + '&id=' + appSession.tenant.logoId" alt="logo" height="38" />
+            <h3 style="display:inline-block; color:#ffffff">Dev</h3>
+            <h3 style="display:inline-block; color:#FF5733">Smart</h3>
+            <!--<img *ngIf="!appSession.tenant || !appSession.tenant.logoId" [src]="defaultLogo" alt="logo" height="38" />
+    <img *ngIf="appSession.tenant && appSession.tenant.logoId" [src]="remoteServiceBaseUrl + '/TenantCustomization/GetTenantLogo?skin=' + currentTheme.baseSettings.menu.asideSkin + '&tenantId=' + appSession.tenant.id + '&id=' + appSession.tenant.logoId" alt="logo" height="38" />-->
         </a>
     </div>
     <div class="kt-aside__brand-tools">
